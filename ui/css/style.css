@@ -44,6 +44,36 @@ div#container{
 }
 .content{
     width: auto;
+    margin-left: 250px;
     height: 100%;
     background-color: #ffffff;
+    padding: 15px;
+}
+
+ul#nav{
+
+}
+ul#nav li{
+    list-style: none;
+}
+ul#nav li a{
+    color: #ccc;
+    display: block;
+    padding: 45px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #0a0a0a;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+ul#nav li a:hover{
+    background-color: #030303;
+    color: #fff;
+    padding-left: 30px;
+}
+ul#nav li a.selected{
+    background-color: #030303;
+    color: #fff;
 }
