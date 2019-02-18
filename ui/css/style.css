@@ -151,3 +151,10 @@ th{
 tr:nth-child(even){
     background-color: beige;
 }
+
+.contente-room{
+    margin-top: 10%;
+    /* width: 80%; */
+    margin-left: 2%;
+
+}
