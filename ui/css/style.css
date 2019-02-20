@@ -103,6 +103,7 @@ div#box .box-panel{
 } */
 
 .button a{
+    text-decoration: none;
     color: #fff;
     font-size: 1.8em;
     position: absolute;
@@ -116,6 +117,7 @@ div#box .box-panel{
     left: 90%;
     transition: color .2s ease-out 0s;
     border-radius: 10px;
+    display: block;
 }
 .button a:hover{
     color: #fc3;
@@ -158,3 +160,169 @@ tr:nth-child(even){
     margin-left: 2%;
 
 }
+.modal-add{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: all 500ms ease;
+}
+
+.modal-add:target{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.modal{
+    width: 350px;
+    height: 540px;
+    margin: auto;
+    position: absolute;
+    top: 0px; bottom: 0px;
+    right: 0px; left: 500px;
+    background: black;
+    border: 2px solid #222;
+    padding: 20px;
+    box-shadow: 0px 0px 50px black;
+    margin-bottom: 10%;
+}
+.modal-heading{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 60px;
+    margin-bottom: 30px;
+    color: yellow;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18pt;
+    font-family: big john;
+    border-bottom: 2px solid #fefefe;
+}
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 50px;
+    border: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    text-align: center;
+}
+input[type="button"], 
+input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+.close{
+    color: white;
+    position: absolute;
+    border: 2px solid #333;
+    padding: 7px 9px 11px 9px;
+    font-family: big john;
+    background: black;
+    text-decoration: none;
+    top:-20px;
+    right: -20px;
+    border-radius: 50%;
+    transition: background 500ms;
+}
+.close:hover{
+    background: #444;
+    cursor: pointer;
+
+}
+
+
+
+/* 
+.form-style-9{
+	max-width: 450px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+    border: 6px solid #305A72;
+}
+
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+} */
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+
